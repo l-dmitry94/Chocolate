@@ -112,7 +112,7 @@ body {
         align-items: flex-end;
         height: 621px;
         background-color: rgba(17, 17, 17, 0.60);
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/mobile/hero-bg-mob.jpg);
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/desktop/hero-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -404,7 +404,18 @@ body {
         height: 500px;
         border-radius: 15px;
         background-image: linear-gradient(rgba(17, 17, 17, 0.40), rgba(17, 17, 17, 0.40)), url(../img/mobile/made-mob.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        &__video-block {
+            background-image: linear-gradient(rgba(17, 17, 17, 0.40), rgba(17, 17, 17, 0.40)), url(../img/retina/made-mob@2x.jpg);
+
+        }
     }
 
     &__video {

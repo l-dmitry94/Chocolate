@@ -1,36 +1,76 @@
-// @media (min-width: 768px) {
-//     .container {
-//         max-width: 768px;
-//         padding: 0 32px;
-//     }
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
 
-//     .hero {
+    .hero {
 
-//         @media (min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx) {
-//             &__block {
-//                 background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/retina/hero-bg-tab@2x.jpg);
+        &__block {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/tablet/hero-bg-tab.jpg);
+        }
 
-//             }
-//         }
-//     }
-// }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            &__block {
+                background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/retina/hero-bg-tab@2x.jpg);
 
-// @media (min-width: 1200px) {
-//     .container {
-//         max-width: 1200px;
-//     }
+            }
+        }
+    }
 
-//     .hero {
+    .made {
 
-//         @media (min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx) {
-//             &__block {
-//                 background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/retina/hero-bg@2x.jpg);
+        &__video-block {
+            background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/tablet/made-tab.jpg);
+        }
 
-//             }
-//         }
-//     }
-// }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            &__video-block {
+                background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/retina/made-tab@2x.jpg);
+
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero {
+
+        &__block {
+            background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/desktop/hero-bg.jpg);
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            &__block {
+                background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/retina/hero-bg@2x.jpg);
+            }
+        }
+    }
+
+    .video {
+        &__video-block {
+            background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/desktop/made.jpg);
+
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            &__video-block {
+                background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/retina/made@2x.jpg);
+
+            }
+        }
+    }
+}
