@@ -613,3 +613,114 @@ body {
   background-color: var(--orange);
   border-color: transparent;
 }
+
+.footer {
+  background-color: var(--violet);
+  padding: 32px 0;
+}
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 32px;
+}
+.footer__title {
+  max-width: 300px;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+}
+.footer__title-color {
+  color: var(--orange);
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer__item-title {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  margin-bottom: 14px;
+}
+.footer__bottom {
+  padding-top: 32px;
+}
+.footer__form {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+.footer__form-input {
+  width: 207px;
+  height: 45px;
+  color: var(--white);
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  outline: transparent;
+  transition: border-color var(--transition);
+  padding: 0 18px;
+}
+.footer__form-input:focus {
+  border-color: var(--orange);
+}
+.footer__form-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer__form-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer__form-button {
+  padding: 14px 24px;
+}
+
+.address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.address__item-link {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.socials__list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.socials__list-link {
+  fill: transparent;
+  stroke: var(--white);
+  transition: stroke var(--transition);
+}
+.socials__list-link:is(:hover, :focus) {
+  stroke: var(--orange);
+}
+.socials__item-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.menu__list-link {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}

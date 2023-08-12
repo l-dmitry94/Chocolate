@@ -654,5 +654,140 @@ body {
     }
 }
 
+.footer {
+    background-color: var(--violet);
+    padding: 32px 0;
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        padding-bottom: 32px;
+    }
+
+    &__title {
+        max-width: 300px;
+        color: var(--white);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: -0.02em;
+    }
+
+    &__title-color {
+        color: var(--orange);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__item-title {
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.29;
+        margin-bottom: 14px;
+    }
+
+    &__bottom {
+        padding-top: 32px;
+    }
+
+    &__form {
+        display: flex;
+        gap: 8px;
+        margin-top: 32px;
+    }
+
+    &__form-input {
+        width: 207px;
+        height: 45px;
+        color: var(--white);
+        font-size: 14px;
+        letter-spacing: -0.02em;
+        background-color: transparent;
+        border-radius: 30px;
+        border: 1.5px solid rgba(255, 255, 255, 0.15);
+        outline: transparent;
+        transition: border-color var(--transition);
+        padding: 0 18px;
+
+        &:focus {
+            border-color: var(--orange);
+        }
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.30);
+        }
+    }
+
+    &__form-button {
+        padding: 14px 24px;
+    }
+}
+
+.address {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__item-link {
+        color: var(--white);
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+    }
+}
+
+.socials {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__list-link {
+        fill: transparent;
+        stroke: var(--white);
+        transition: stroke var(--transition);
+
+        &:is(:hover, :focus) {
+            stroke: var(--orange);
+        }
+    }
+
+    &__item-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.menu {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    &__list-item {}
+
+    &__list-link {
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+    }
+}
+
 
 @import "media";
