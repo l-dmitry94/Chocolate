@@ -530,7 +530,6 @@ body {
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
         margin-top: 32px;
     }
 
@@ -543,7 +542,7 @@ body {
             display: none;
         }
 
-        &:is(:hover, :focus) .sellers__item-hidden{
+        &:is(:hover, :focus) .sellers__item-hidden {
             transform: scale(1);
         }
     }
@@ -593,6 +592,65 @@ body {
         border-top: none;
         background: #FFF;
         padding: 24px 0;
+    }
+}
+
+.reviews {
+    padding: 40px 0 80px;
+
+    &__list {
+        display: flex;
+        margin: 74px 0 32px;
+    }
+
+    &__list-item {
+        flex-basis: 100%;
+        text-align: center;
+        border-radius: 15px;
+        border: 1px solid rgba(17, 17, 17, 0.10);
+        background-color: var(--white);
+        box-shadow: 0px 9.049315452575684px 100px 0px rgba(17, 17, 17, 0.03);
+        padding: 0 18px 42px;
+
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+
+    &__item-photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: -40px auto 18px auto;
+    }
+
+    &__item-name {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+        margin-bottom: 24px;
+    }
+
+    &__item-text {
+        color: rgba(17, 17, 17, 0.70);
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+    }
+
+    &__button {
+        display: block;
+        color: var(--black);
+        border: 1px solid var(--orange);
+        background-color: transparent;
+        transition: border-color var(--transition), color var(--transition), background-color var(--transition);
+        margin: 0 auto;
+
+        &:is(:hover, :focus) {
+            color: var(--white);
+            background-color: var(--orange);
+            border-color: transparent;
+        }
     }
 }
 
