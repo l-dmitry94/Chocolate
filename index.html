@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simply Chocolate</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -31,17 +29,17 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
+                                <a class="menu__list-link" href="./">
                                     Home
                                 </a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
+                                <a class="menu__list-link" href="#made">
                                     How it's made?
                                 </a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
+                                <a class="menu__list-link" href="#reviews">
                                     Chocolate is loved
                                 </a>
                             </li>
@@ -71,7 +69,7 @@
                         </li>
                     </ul>
                 </div>
-                <button class="header__burger" type="button">
+                <button class="header__burger js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
                     <svg class="header__burger-icon">
                         <use href="./img/icons.svg#icon-menu"></use>
                     </svg>
@@ -100,12 +98,12 @@
                                     </button>
                                 </li>
                                 <li class="hero__buttons-item">
-                                    <button class="button hero__buttons-button" type="button">
+                                    <a class="button hero__buttons-button" href="#made">
                                         How it's made
-                                    </button>
+                                    </a>
                                 </li>
                             </ul>
-                            <a class="hero__button-scroll" href="#">
+                            <a class="hero__button-scroll" href="#footer">
                                 scroll down
                                 <button class="hero__button-scroll-button">
                                     <svg class="hero__button-scroll-icon">
@@ -192,12 +190,9 @@
                 <ul class="ingridients__list">
                     <li class="ingridients__list-item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="./img/desktop/ingridient-1.png 1x, ./img/retina/ingridient-1@2x.png 2x">
-                            <source media="(min-width: 320px)"
-                                srcset="./img/mobile/ingridient-mob-1.png 1x, ./img/retina/ingridient-mob-1@2x.png 2x">
-                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-1.png"
-                                alt="mILK CHOCOLATE" width="236">
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/ingridient-1.png 1x, ./img/retina/ingridient-1@2x.png 2x">
+                            <source media="(min-width: 320px)" srcset="./img/mobile/ingridient-mob-1.png 1x, ./img/retina/ingridient-mob-1@2x.png 2x">
+                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-1.png" alt="mILK CHOCOLATE" width="236">
                         </picture>
                         <h4 class="ingridients__item-title">
                             mILK CHOCOLATE
@@ -231,12 +226,9 @@
                     </li>
                     <li class="ingridients__list-item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="./img/desktop/ingridient-2.png 1x, ./img/retina/ingridient-2@2x.png 2x">
-                            <source media="(min-width: 320px)"
-                                srcset="./img/mobile/ingridient-mob-2.png 1x, ./img/retina/ingridient-mob-2@2x.png 2x">
-                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-2.png" alt="MILK"
-                                width="236">
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/ingridient-2.png 1x, ./img/retina/ingridient-2@2x.png 2x">
+                            <source media="(min-width: 320px)" srcset="./img/mobile/ingridient-mob-2.png 1x, ./img/retina/ingridient-mob-2@2x.png 2x">
+                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-2.png" alt="MILK" width="236">
                         </picture>
                         <h4 class="ingridients__item-title">
                             MILK
@@ -266,12 +258,9 @@
                     </li>
                     <li class="ingridients__list-item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="./img/desktop/ingridient-3.png 1x, ./img/retina/ingridient-3@2x.png 2x">
-                            <source media="(min-width: 320px)"
-                                srcset="./img/mobile/ingridient-mob-3.png 1x, ./img/retina/ingridient-mob-3@2x.png 2x">
-                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-3.png" alt="NUTS"
-                                width="236">
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/ingridient-3.png 1x, ./img/retina/ingridient-3@2x.png 2x">
+                            <source media="(min-width: 320px)" srcset="./img/mobile/ingridient-mob-3.png 1x, ./img/retina/ingridient-mob-3@2x.png 2x">
+                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-3.png" alt="NUTS" width="236">
                         </picture>
                         <h4 class="ingridients__item-title">
                             NUTS
@@ -301,12 +290,9 @@
                     </li>
                     <li class="ingridients__list-item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="./img/desktop/ingridient-4.png 1x, ./img/retina/ingridient-4@2x.png 2x">
-                            <source media="(min-width: 320px)"
-                                srcset="./img/mobile/ingridient-mob-4.png 1x, ./img/retina/ingridient-mob-4@2x.png 2x">
-                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-4.png"
-                                alt="SEMI - SWEET CHOCOLATE" width="236">
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/ingridient-4.png 1x, ./img/retina/ingridient-4@2x.png 2x">
+                            <source media="(min-width: 320px)" srcset="./img/mobile/ingridient-mob-4.png 1x, ./img/retina/ingridient-mob-4@2x.png 2x">
+                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-4.png" alt="SEMI - SWEET CHOCOLATE" width="236">
                         </picture>
                         <h4 class="ingridients__item-title">
                             SEMI - SWEET CHOCOLATE
@@ -336,12 +322,9 @@
                     </li>
                     <li class="ingridients__list-item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="./img/desktop/ingridient-5.png 1x, ./img/retina/ingridient-5@2x.png 2x">
-                            <source media="(min-width: 320px)"
-                                srcset="./img/mobile/ingridient-mob-5.png 1x, ./img/retina/ingridient-mob-5@2x.png 2x">
-                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-5.png" alt="CACAO"
-                                width="236">
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/ingridient-5.png 1x, ./img/retina/ingridient-5@2x.png 2x">
+                            <source media="(min-width: 320px)" srcset="./img/mobile/ingridient-mob-5.png 1x, ./img/retina/ingridient-mob-5@2x.png 2x">
+                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-5.png" alt="CACAO" width="236">
                         </picture>
                         <h4 class="ingridients__item-title">
                             CACAO
@@ -371,12 +354,9 @@
                     </li>
                     <li class="ingridients__list-item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="./img/desktop/ingridient-6.png 1x, ./img/retina/ingridient-6@2x.png 2x">
-                            <source media="(min-width: 320px)"
-                                srcset="./img/mobile/ingridient-mob-6.png 1x, ./img/retina/ingridient-mob-6@2x.png 2x">
-                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-6.png" alt="RASPBERRY"
-                                width="236">
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/ingridient-6.png 1x, ./img/retina/ingridient-6@2x.png 2x">
+                            <source media="(min-width: 320px)" srcset="./img/mobile/ingridient-mob-6.png 1x, ./img/retina/ingridient-mob-6@2x.png 2x">
+                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-6.png" alt="RASPBERRY" width="236">
                         </picture>
                         <h4 class="ingridients__item-title">
                             RASPBERRY
@@ -406,12 +386,9 @@
                     </li>
                     <li class="ingridients__list-item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="./img/desktop/ingridient-7.png 1x, ./img/retina/ingridient-7@2x.png 2x">
-                            <source media="(min-width: 320px)"
-                                srcset="./img/mobile/ingridient-mob-7.png 1x, ./img/retina/ingridient-mob-7@2x.png 2x">
-                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-7.png" alt="COCONUT OIL"
-                                width="236">
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/ingridient-7.png 1x, ./img/retina/ingridient-7@2x.png 2x">
+                            <source media="(min-width: 320px)" srcset="./img/mobile/ingridient-mob-7.png 1x, ./img/retina/ingridient-mob-7@2x.png 2x">
+                            <img class="ingridients__item-img" src="./img/mobile/ingridient-mob-7.png" alt="COCONUT OIL" width="236">
                         </picture>
                         <h4 class="ingridients__item-title">
                             COCONUT OIL
@@ -442,7 +419,7 @@
             </div>
         </section>
 
-        <section class="made">
+        <section class="made" id="made">
             <div class="container">
                 <h2 class="title">
                     hOW IT'S
@@ -452,10 +429,7 @@
                 </h2>
                 <div class="made__block">
                     <div class="made__video-block">
-                        <iframe class="made__video" src="https://www.youtube.com/embed/DISjdfkSjc8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <iframe class="made__video" src="https://www.youtube.com/embed/DISjdfkSjc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <button class="made__video-play" type="button">
                             <svg class="made__video-icon">
                                 <use href="./img/icons.svg#icon-play"></use>
@@ -490,16 +464,14 @@
             </div>
         </section>
 
-        <section class="product">
+        <section class="product" id="products">
             <div class="container">
                 <h2 class="title">
                     Our <span class="title__color">pRODUCTS</span>
                 </h2>
                 <ul class="product__list">
                     <li class="product__list-item">
-                        <img class="product__item-img" src="./img/mobile/product-mob-1.jpg" alt="orange" width="230"
-                            height="201"
-                            srcset="./img/mobile/product-mob-1.jpg 1x, ./img/retina/product-mob-1@2x.jpg 2x">
+                        <img class="product__item-img" src="./img/mobile/product-mob-1.jpg" alt="orange" width="230" height="201" srcset="./img/mobile/product-mob-1.jpg 1x, ./img/retina/product-mob-1@2x.jpg 2x">
                         <h3 class="product__item-title">
                             orange
                         </h3>
@@ -511,9 +483,7 @@
                         </span>
                     </li>
                     <li class="product__list-item">
-                        <img class="product__item-img" src="./img/mobile/product-mob-2.jpg" alt="APPLE&CRANBERRY"
-                            width="230" height="201"
-                            srcset="./img/mobile/product-mob-2.jpg 1x, ./img/retina/product-mob-2@2x.jpg 2x">
+                        <img class="product__item-img" src="./img/mobile/product-mob-2.jpg" alt="APPLE&CRANBERRY" width="230" height="201" srcset="./img/mobile/product-mob-2.jpg 1x, ./img/retina/product-mob-2@2x.jpg 2x">
                         <h3 class="product__item-title">
                             APPLE&CRANBERRY
                         </h3>
@@ -525,9 +495,7 @@
                         </span>
                     </li>
                     <li class="product__list-item">
-                        <img class="product__item-img" src="./img/mobile/product-mob-3.jpg" alt="lime&sea salt"
-                            width="230" height="201"
-                            srcset="./img/mobile/product-mob-3.jpg 1x, ./img/retina/product-mob-3@2x.jpg 2x">
+                        <img class="product__item-img" src="./img/mobile/product-mob-3.jpg" alt="lime&sea salt" width="230" height="201" srcset="./img/mobile/product-mob-3.jpg 1x, ./img/retina/product-mob-3@2x.jpg 2x">
                         <h3 class="product__item-title">
                             lime&sea salt
                         </h3>
@@ -539,9 +507,7 @@
                         </span>
                     </li>
                     <li class="product__list-item">
-                        <img class="product__item-img" src="./img/mobile/product-mob-4.jpg" alt="pineapple" width="230"
-                            height="201"
-                            srcset="./img/mobile/product-mob-4.jpg 1x, ./img/retina/product-mob-4@2x.jpg 2x">
+                        <img class="product__item-img" src="./img/mobile/product-mob-4.jpg" alt="pineapple" width="230" height="201" srcset="./img/mobile/product-mob-4.jpg 1x, ./img/retina/product-mob-4@2x.jpg 2x">
                         <h3 class="product__item-title">
                             pineapple
                         </h3>
@@ -553,9 +519,7 @@
                         </span>
                     </li>
                     <li class="product__list-item">
-                        <img class="product__item-img" src="./img/mobile/product-mob-5.jpg" alt="Classic" width="230"
-                            height="201"
-                            srcset="./img/mobile/product-mob-5.jpg 1x, ./img/retina/product-mob-5@2x.jpg 2x">
+                        <img class="product__item-img" src="./img/mobile/product-mob-5.jpg" alt="Classic" width="230" height="201" srcset="./img/mobile/product-mob-5.jpg 1x, ./img/retina/product-mob-5@2x.jpg 2x">
                         <h3 class="product__item-title">
                             Classic
                         </h3>
@@ -567,9 +531,7 @@
                         </span>
                     </li>
                     <li class="product__list-item">
-                        <img class="product__item-img" src="./img/mobile/product-mob-6.jpg" alt="honey" width="230"
-                            height="201"
-                            srcset="./img/mobile/product-mob-6.jpg 1x, ./img/retina/product-mob-6@2x.jpg 2x">
+                        <img class="product__item-img" src="./img/mobile/product-mob-6.jpg" alt="honey" width="230" height="201" srcset="./img/mobile/product-mob-6.jpg 1x, ./img/retina/product-mob-6@2x.jpg 2x">
                         <h3 class="product__item-title">
                             honey
                         </h3>
@@ -581,9 +543,7 @@
                         </span>
                     </li>
                     <li class="product__list-item">
-                        <img class="product__item-img" src="./img/mobile/product-mob-7.jpg" alt="Roasted fruits"
-                            width="230" height="201"
-                            srcset="./img/mobile/product-mob-7.jpg 1x, ./img/retina/product-mob-7@2x.jpg 2x">
+                        <img class="product__item-img" src="./img/mobile/product-mob-7.jpg" alt="Roasted fruits" width="230" height="201" srcset="./img/mobile/product-mob-7.jpg 1x, ./img/retina/product-mob-7@2x.jpg 2x">
                         <h3 class="product__item-title">
                             Roasted fruits
                         </h3>
@@ -595,9 +555,7 @@
                         </span>
                     </li>
                     <li class="product__list-item">
-                        <img class="product__item-img" src="./img/mobile/product-mob-8.jpg" alt="Classic" width="230"
-                            height="201"
-                            srcset="./img/mobile/product-mob-8.jpg 1x, ./img/retina/product-mob-8@2x.jpg 2x">
+                        <img class="product__item-img" src="./img/mobile/product-mob-8.jpg" alt="Classic" width="230" height="201" srcset="./img/mobile/product-mob-8.jpg 1x, ./img/retina/product-mob-8@2x.jpg 2x">
                         <h3 class="product__item-title">
                             Classic
                         </h3>
@@ -612,7 +570,7 @@
             </div>
         </section>
 
-        <section class="sellers">
+        <section class="sellers" id="sellers">
             <div class="container">
                 <h2 class="title">
                     <span class="title__color">tOp</span> Sellers
@@ -620,8 +578,7 @@
                 <ul class="sellers__list">
                     <li class="sellers__list-item">
                         <div class="sellers__item-block">
-                            <img class="sellers__item-img" src="./img/mobile/seller-mob-1.jpg" alt="CHOCOLATE WITH NUTS"
-                                srcset="./img/mobile/seller-mob-1.jpg 1x, ./img/retina/seller-mob-1@2x.jpg 2x">
+                            <img class="sellers__item-img" src="./img/mobile/seller-mob-1.jpg" alt="CHOCOLATE WITH NUTS" srcset="./img/mobile/seller-mob-1.jpg 1x, ./img/retina/seller-mob-1@2x.jpg 2x">
                             <div class="sellers__item-hidden">
                                 <p class="sellers__item-hidden-text">
                                     Chocolate with nuts is an incredible combination of two taste pleasures. When
@@ -637,9 +594,7 @@
                     </li>
                     <li class="sellers__list-item">
                         <div class="sellers__item-block">
-                            <img class="sellers__item-img" src="./img/mobile/seller-mob-2.jpg"
-                                alt="CHOCOLATE WITH FRUITS"
-                                srcset="./img/mobile/seller-mob-2.jpg 1x, ./img/retina/seller-mob-2@2x.jpg 2x">
+                            <img class="sellers__item-img" src="./img/mobile/seller-mob-2.jpg" alt="CHOCOLATE WITH FRUITS" srcset="./img/mobile/seller-mob-2.jpg 1x, ./img/retina/seller-mob-2@2x.jpg 2x">
                             <div class="sellers__item-hidden">
                                 <p class="sellers__item-hidden-text">
                                     Chocolate with fruit is an unbeatable combination of two of the tastiest things in
@@ -655,8 +610,7 @@
                     </li>
                     <li class="sellers__list-item">
                         <div class="sellers__item-block">
-                            <img class="sellers__item-img" src="./img/mobile/seller-mob-3.jpg" alt="DARK CHOCOLATE"
-                                srcset="./img/mobile/seller-mob-3.jpg 1x, ./img/retina/seller-mob-3@2x.jpg 2x">
+                            <img class="sellers__item-img" src="./img/mobile/seller-mob-3.jpg" alt="DARK CHOCOLATE" srcset="./img/mobile/seller-mob-3.jpg 1x, ./img/retina/seller-mob-3@2x.jpg 2x">
                             <div class="sellers__item-hidden">
                                 <p class="sellers__item-hidden-text">
                                     Dark chocolate is a rich and indulgent treat that is beloved by many chocolate
@@ -675,15 +629,14 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <h2 class="title">
                     <span class="title__color">chocolate</span> is loved
                 </h2>
                 <ul class="reviews__list">
                     <li class="reviews__list-item">
-                        <img class="reviews__item-photo" src="./img/mobile/review-mob-1.png" alt="Victoria Dobrzhanska"
-                            srcset="./img/mobile/review-mob-1.png 1x, ./img/retina/review-mob-1@2x.png">
+                        <img class="reviews__item-photo" src="./img/mobile/review-mob-1.png" alt="Victoria Dobrzhanska" srcset="./img/mobile/review-mob-1.png 1x, ./img/retina/review-mob-1@2x.png">
                         <h3 class="reviews__item-name">
                             Victoria Dobrzhanska
                         </h3>
@@ -693,8 +646,7 @@
                         </p>
                     </li>
                     <li class="reviews__list-item">
-                        <img class="reviews__item-photo" src="./img/mobile/review-mob-2.png" alt="Victoria Dobrzhanska"
-                            srcset="./img/mobile/review-mob-2.png 1x, ./img/retina/review-mob-2@2x.png">
+                        <img class="reviews__item-photo" src="./img/mobile/review-mob-2.png" alt="Victoria Dobrzhanska" srcset="./img/mobile/review-mob-2.png 1x, ./img/retina/review-mob-2@2x.png">
                         <h3 class="reviews__item-name">
                             Nazar Babenko
                         </h3>
@@ -704,8 +656,7 @@
                         </p>
                     </li>
                     <li class="reviews__list-item">
-                        <img class="reviews__item-photo" src="./img/mobile/review-mob-3.png" alt="Victoria Dobrzhanska"
-                            srcset="./img/mobile/review-mob-3.png 1x, ./img/retina/review-mob-3@2x.png">
+                        <img class="reviews__item-photo" src="./img/mobile/review-mob-3.png" alt="Victoria Dobrzhanska" srcset="./img/mobile/review-mob-3.png 1x, ./img/retina/review-mob-3@2x.png">
                         <h3 class="reviews__item-name">
                             Olena Kampusch
                         </h3>
@@ -715,7 +666,7 @@
                         </p>
                     </li>
                 </ul>
-                <button class="button reviews__button" type="button">
+                <button class="button reviews__button" type="button" data-modal-open>
                     Leave a review
                 </button>
             </div>
@@ -723,7 +674,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__top">
                 <p class="footer__title">
@@ -783,27 +734,27 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                            <a class="menu__list-link" href="./">
                                 Home
                             </a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                            <a class="menu__list-link" href="#made">
                                 How it's made?
                             </a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                            <a class="menu__list-link" href="#products">
                                 Our products
                             </a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                            <a class="menu__list-link" href="#sellers">
                                 Top sellers
                             </a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                            <a class="menu__list-link" href="#reviews">
                                 Chocolate is loved
                             </a>
                         </li>
@@ -819,15 +770,15 @@
         </div>
     </footer>
 
-    <div class="modal__overlay">
+    <div class="modal__overlay is-hidden" data-modal>
         <div class="modal__content">
-            <button class="close">
+            <button class="close" data-modal-close>
                 <svg class="close__icon">
                     <use href="./img/icons.svg#icon-close"></use>
                 </svg>
             </button>
             <h2 class="title">
-                leave a review about <span class="title__color">our chocolate</span>
+                leave a review <br> about <span class="title__color">our chocolate</span>
             </h2>
             <form class="modal__form">
                 <ul class="modal__list">
@@ -842,10 +793,109 @@
                             </svg>
                         </div>
                     </li>
+                    <li class="modal__list-item">
+                        <label class="modal__label" for="user-email">
+                            Email
+                        </label>
+                        <div class="modal__block">
+                            <input class="modal__input" id="user-email" type="text" name="user-email">
+                            <svg class="modal__icon">
+                                <use href="./img/icons.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="modal__list-item">
+                        <label class="modal__label" for="user-phone">
+                            Phone number
+                        </label>
+                        <div class="modal__block">
+                            <input class="modal__input" id="user-phone" type="text" name="user-phone">
+                            <svg class="modal__icon">
+                                <use href="./img/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="modal__list-item">
+                        <label class="modal__label" for="user-comment">
+                            Comment
+                        </label>
+                        <textarea class="modal__textarea" id="user-comment" name="user-comment" placeholder="Enter text"></textarea>
+                    </li>
                 </ul>
+                <div class="modal__check">
+                    <input class="visually-hidden modal__check-hidden" id="modal-privacy" type="checkbox" name="modal-privacy" value="true">
+                    <label class="modal__check-label" for="modal-privacy">
+                        <span class="modal__check-span">
+                            <svg class="modal__check-icon">
+                                <use href="./img/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        <span class="modal__check-text">
+                            I accept the terms and conditions of the
+                            <a class="modal__check-link" href="#">Privacy Policy</a>
+                        </span>
+                    </label>
+                </div>
+                <button class="button" type="submit">
+                    Send
+                </button>
             </form>
         </div>
     </div>
+
+    <div class="mobile__menu js-menu-container" id="mobile-menu">
+        <button class="close js-close-menu" data-modal-close>
+            <svg class="close__icon">
+                <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="./">
+                        Home
+                    </a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#made">
+                        How it's made?
+                    </a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#reviews">
+                        Chocolate is loved
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="socials__list">
+            <li class="socials__list-item">
+                <a class="socials__list-link" href="#" target="_blank">
+                    <svg class="socials__item-icon">
+                        <use href="./img/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials__list-item">
+                <a class="socials__list-link" href="#" target="_blank">
+                    <svg class="socials__item-icon">
+                        <use href="./img/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials__list-item">
+                <a class="socials__list-link" href="#" target="_blank">
+                    <svg class="socials__item-icon">
+                        <use href="./img/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
 
 </body>
 
