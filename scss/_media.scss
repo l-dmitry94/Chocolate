@@ -1,76 +1,523 @@
-// @media (min-width: 768px) {
-//     .container {
-//         max-width: 768px;
-//         padding: 0 32px;
-//     }
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
 
-//     .hero {
+    .header {
+        padding: 24px 0 35px;
 
-//         &__block {
-//             background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/tablet/hero-bg-tab.jpg);
-//         }
+        &__right {
+            display: flex;
+            gap: 48px;
+        }
 
-//         @media (min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx) {
-//             &__block {
-//                 background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/retina/hero-bg-tab@2x.jpg);
+        & .menu {
+            &__list {
+                flex-direction: row;
+                gap: 24px;
+            }
 
-//             }
-//         }
-//     }
+            &__list-link {
+                color: var(--black);
 
-//     .made {
+                &:is(:hover, :focus) {
+                    color: var(--orange);
+                }
+            }
+        }
 
-//         &__video-block {
-//             background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/tablet/made-tab.jpg);
-//         }
+        & .socials {
+            &__list-link {
+                stroke: var(--black);
+            }
 
-//         @media (min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx) {
-//             &__video-block {
-//                 background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/retina/made-tab@2x.jpg);
+            &__list-link:is(:hover, :focus) {
+                stroke: var(--orange);
+            }
+        }
 
-//             }
-//         }
-//     }
+        &__burger {
+            display: none;
+        }
 
-// }
+    }
 
-// @media (min-width: 1200px) {
-//     .container {
-//         max-width: 1200px;
-//     }
+    .button {
+        padding: 14px 40px;
+    }
 
-//     .hero {
+    .hero {
 
-//         &__block {
-//             background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/desktop/hero-bg.jpg);
-//         }
+        &__block {
+            height: 890px;
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/tablet/hero-bg-tab.jpg);
+            padding: 40px;
+        }
 
-//         @media (min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx) {
-//             &__block {
-//                 background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/retina/hero-bg@2x.jpg);
-//             }
-//         }
-//     }
+        &__down {
+            width: 100%;
+        }
 
-//     .video {
-//         &__video-block {
-//             background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/desktop/made.jpg);
+        &__text {
+            max-width: 484px;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 1.21;
 
-//         }
+            & br {
+                display: block;
+            }
+        }
 
-//         @media (min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx) {
-//             &__video-block {
-//                 background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/retina/made@2x.jpg);
+        &__buttons {
+            justify-content: space-between;
+        }
 
-//             }
-//         }
-//     }
-// }
+        &__button-scroll {
+            font-size: 14px;
+            line-height: 1.29;
+        }
+
+        &__button-scroll-button {
+            width: 38px;
+            height: 38px;
+            margin-left: 14px;
+        }
+
+        &__button-scroll-icon {
+            width: 22px;
+            height: 22px;
+        }
+
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            &__block {
+                background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/retina/hero-bg-tab@2x.jpg);
+
+            }
+        }
+    }
+
+    .benefits {
+        padding: 50px 0 85px;
+
+        &__list {
+            gap: 45px 88px;
+            max-width: 100%;
+        }
+
+        &__list-item {
+            flex-basis: calc((100% - 88px) / 2);
+        }
+    }
+
+    .title {
+        max-width: 411px;
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+
+    .ingridients {
+        padding: 100px 0 50px;
+
+        &__list {
+            gap: 32px;
+        }
+
+        &__list-item {
+            flex-basis: calc((100% - 32px) / 2);
+        }
+    }
+
+    .made {
+        padding: 50px 0;
+
+        &__block {
+            max-width: 614px;
+            margin: 0 auto;
+        }
+
+        &__video-block {
+            height: 400px;
+            background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/tablet/made-tab.jpg);
+        }
+
+        &__content {
+            flex-basis: 100%;
+            padding: 32px;
+        }
+
+        &__title {
+            max-width: 350px;
+            margin-bottom: 28px;
+        }
+
+        &__list {
+            max-width: 480px;
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            &__video-block {
+                background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/retina/made-tab@2x.jpg);
+
+            }
+        }
+    }
+
+    .products {
+        padding: 50px 0;
+
+        &__list {
+            gap: 32px;
+        }
+
+        &__list-item {
+            flex-basis: calc((100% - 32px) / 2);
+        }
+    }
+
+    .sellers {
+        padding: 50px 0;
+
+        &__list {
+            gap: 16px;
+        }
+
+        &__list-item {
+            flex-basis: calc((100% - 16px) / 2);
+
+            &:not(:first-child) {
+                display: block;
+            }
+
+            &:not(:nth-child(-n + 2)) {
+                display: none;
+            }
+        }
+
+        &__item-title {
+            padding: 28px 0;
+        }
+    }
+
+    .reviews {
+        padding: 50px 0 100px;
+
+        &__list {
+            gap: 16px;
+            margin: 91px 0 50px;
+        }
+
+        &__list-item {
+            flex-basis: calc((100% - 16px) / 2);
+
+            &:not(:first-child) {
+                display: block;
+            }
+
+            &:not(:nth-child(-n + 2)) {
+                display: none;
+            }
+        }
+    }
+
+    .footer {
+        padding: 50px 0;
+
+
+        &__top {
+            justify-content: space-between;
+            padding-bottom: 50px;
+        }
+
+        &__title {
+            font-size: 28px;
+            line-height: 1.21;
+        }
+
+        &__list {
+            flex-direction: row;
+        }
+
+        &__list-item {
+
+            &:first-child {
+                order: 1;
+            }
+
+            &:last-child {
+                order: 0;
+            }
+        }
+
+        &__item-title {}
+
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            padding-top: 24px;
+        }
+
+        & .menu {
+
+            &__list {
+                flex-direction: row;
+            }
+
+            &__list-item:nth-child(3),
+            &__list-item:nth-child(4) {
+                display: none;
+            }
+        }
+
+        &__form {
+            margin-top: 0;
+        }
+
+        &__form-input {
+            width: 233px;
+            padding: 0 24px;
+        }
+
+        &__form-button {
+            padding: 14px 28px;
+        }
+    }
+
+    .modal {
+        &__content {
+            width: 517px;
+            height: 622px;
+            overflow-y: scroll;
+            padding: 40px;
+
+            & .title {
+                max-width: 298px;
+                letter-spacing: -0.03em;
+                margin-bottom: 40px;
+                & br {
+                    display: none;
+                }
+            }
+        }
+
+        & .close {
+            width: 28px;
+            height: 28px;
+        }
+
+        &__list {
+            gap: 18px;
+        }
+
+        &__label {
+            margin-bottom: 8px;
+        }
+
+        &__input {
+            height: 68px;
+            font-size: 18px;
+            padding: 0 62px;
+        }
+
+        &__icon {
+            width: 24px;
+            height: 24px;
+            left: 24px;
+        }
+
+        &__textarea {
+            height: 137px;
+            font-size: 18px;
+            padding: 22px 24px;
+        }
+
+        &__check {
+            margin-bottom: 40px;
+        }
+
+        &__check-label {
+            align-items: center;
+        }
+
+        &__check-text {
+            font-size: 14px;
+
+        }
+
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .header {
+
+        &__logo-text {
+            font-size: 18px;
+            line-height: 1.11;
+        }
+
+        &__logo-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__right {
+            gap: 90px;
+        }
+
+        & .socials {
+            &__list {
+                gap: 14px;
+            }
+        }
+
+    }
+
+    .hero {
+
+        &__block {
+            height: 600px;
+            background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/desktop/hero-bg.jpg);
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            &__block {
+                background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/retina/hero-bg@2x.jpg);
+            }
+        }
+    }
+
+    .benefits {
+        &__list {
+            padding: 0 14px;
+        }
+
+        &__list-item {
+            position: relative;
+            flex-basis: calc((100% - 176px) / 3);
+
+            &:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -44px;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 124px;
+                background-color: rgba(255, 255, 255, 0.50);
+            }
+        }
+    }
+
+    .ingridients {
+        padding: 120px 0 60px;
+
+        &__list {
+            gap: 24px 32px;
+        }
+
+        &__list-item {
+            flex-basis: calc((100% - 96px) / 4);
+        }
+    }
+
+    .made {
+        padding: 60px 0;
+
+        &__block {
+            flex-wrap: nowrap;
+            max-width: 100%;
+
+        }
+
+        &__video-block {
+            max-width: 600px;
+            background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/desktop/made.jpg);
+        }
+
+        &__content {
+            max-width: 516px;
+        }
+
+        &__list {
+            max-width: 440px;
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            &__video-block {
+                background-image: linear-gradient(rgba(17, 17, 17, 0.00), rgba(17, 17, 17, 0.40)), url(../img/retina/made@2x.jpg);
+
+            }
+        }
+    }
+
+    .products {
+        padding: 60px 0;
+
+        &__list {
+            gap: 24px 18px;
+        }
+
+        &__list-item {
+            flex-basis: calc((100% - 54px) / 4);
+            padding: 32px 20px;
+        }
+    }
+
+    .sellers {
+        padding: 60px 0;
+
+        &__list-item {
+            flex-basis: calc((100% - 32px) / 3);
+
+            &:not(:nth-child(-n + 2)) {
+                display: block;
+            }
+        }
+    }
+
+    .reviews {
+        padding: 60px 0 120px;
+
+        &__list-item {
+            flex-basis: calc((100% - 32px) / 3);
+
+            &:not(:first-child) {
+                display: block;
+            }
+
+            &:not(:nth-child(n + 2)) {
+                display: block;
+            }
+        }
+    }
+
+    .footer {
+        &__form-input {
+            width: 313px;
+            height: 52px;
+        }
+
+        &__form-button {
+            padding: 17px 33px;
+        }
+    }
+}

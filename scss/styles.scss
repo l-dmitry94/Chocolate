@@ -109,8 +109,6 @@ body {
         }
     }
 
-    &__down {}
-
     &__text {
         max-width: 290px;
         color: var(--white);
@@ -119,6 +117,10 @@ body {
         line-height: 1.2;
         letter-spacing: -0.03em;
         margin-bottom: 32px;
+
+        & br {
+            display: none;
+        }
     }
 
     &__buttons {
@@ -191,16 +193,14 @@ body {
 
 .benefits {
     background-color: var(--violet);
+    padding: 20px 0;
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         max-width: 308px;
-        padding: 20px 0;
     }
-
-    &__list-item {}
 
     &__item-block {
         display: flex;
@@ -214,6 +214,8 @@ body {
     }
 
     &__item-icon {
+        width: 32px;
+        height: 32px;
         fill: var(--orange)
     }
 
@@ -347,10 +349,11 @@ body {
     }
 
     &__item-hidden-text {
-        overflow: hidden;
+        height: 144px;
         font-size: 14px;
         line-height: 1.29;
         letter-spacing: -0.02em;
+        overflow-y: scroll;
     }
 }
 
@@ -455,7 +458,7 @@ body {
     }
 }
 
-.product {
+.products {
     padding: 40px 0;
 
     &__list {
@@ -759,8 +762,6 @@ body {
         gap: 18px;
     }
 
-    &__list-item {}
-
     &__list-link {
         color: var(--white);
         font-size: 14px;
@@ -815,8 +816,6 @@ body {
         gap: 14px;
         margin-bottom: 18px;
     }
-
-    &__list-item {}
 
     &__label {
         display: inline-block;
